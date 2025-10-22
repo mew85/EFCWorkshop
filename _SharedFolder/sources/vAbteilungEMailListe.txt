@@ -1,0 +1,5 @@
+create view vAbteilungEMailListe as
+select a.AbteilungId, a.abteilungsbezeichnung Abteilung, STRING_AGG (m.Email,',') as EmailListe
+from mitarbeiter m 
+inner join Abteilung a on a.AbteilungId=m.AbteilungId
+group by a.abteilungsbezeichnung, a.AbteilungId

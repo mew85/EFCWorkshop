@@ -1,0 +1,1 @@
+private static string sqlConnectionString = "data source=SQL-SRV0;initial catalog=ADOTest;integrated security=True;TrustServerCertificate=Yes; Encrypt=False";

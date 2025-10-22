@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<efcore context-namespace="ADOTEST.Lib.Models" namespace="ADOTEST.Lib.Models" p1:name="ADOTestDbContext" p1:Guid="04cb1895-3b80-42bb-bc7c-b54c183cde2a" xmlns:p1="http://devart.com/schemas/EntityDeveloper/1.0">
+  <class name="Abteilung" entity-set="Abteilungs" table="abteilung" schema="dbo" p1:Guid="3b45cc65-7306-4354-881d-3bceaedbc76c">
+    <id name="AbteilungId" type="Int32" value-generated="OnAdd" p1:ValidateRequired="true" p1:Guid="44e19346-3fa7-4440-9fd9-9d3e6a743d04">
+      <column name="abteilungId" not-null="True" precision="10" scale="0" sql-type="int" p1:unicode="False" />
+    </id>
+    <property name="Abteilungsbezeichnung" type="String" p1:ValidateMaxLength="20" p1:ValidateRequired="true" p1:Guid="0925cc9b-2184-4417-a988-a471d7a1bc27">
+      <column name="abteilungsbezeichnung" not-null="True" length="20" sql-type="nchar" p1:fixed-length="True" p1:unicode="True" />
+    </property>
+  </class>
+  <class name="Funktion" entity-set="Funktions" table="Funktion" schema="dbo" p1:Guid="5ede3679-dfdc-442e-93b2-ed22e5122947">
+    <id name="FunktionId" type="Int32" value-generated="OnAdd" p1:ValidateRequired="true" p1:Guid="36906e09-be04-4201-a855-c1b7fc366c99">
+      <column name="FunktionId" not-null="True" precision="10" scale="0" sql-type="int" p1:unicode="False" />
+    </id>
+    <property name="Funktionsbezeichnung" type="String" p1:nullable="True" p1:ValidateMaxLength="50" p1:ValidateRequired="false" p1:Guid="1b565156-2ea0-40c1-b624-6d145ab81a7a">
+      <column name="Funktionsbezeichnung" not-null="False" length="50" sql-type="nvarchar" p1:unicode="True" />
+    </property>
+  </class>
+  <class name="Mitarbeiter" entity-set="Mitarbeiters" table="mitarbeiter" schema="dbo" p1:Guid="5b21a712-4a5f-4fc4-9bb0-3958c7a2389d">
+    <id name="MitarbeiterId" type="Int32" value-generated="OnAdd" p1:ValidateRequired="true" p1:Guid="8b4660f7-341a-4309-ab86-51be044cc51a">
+      <column name="mitarbeiterId" not-null="True" precision="10" scale="0" sql-type="int" p1:unicode="False" />
+    </id>
+    <property name="Prsnr" type="String" p1:nullable="True" value-generated="OnAdd" p1:ValidateMaxLength="4" p1:ValidateRequired="false" p1:Guid="334391da-d73f-4360-a63b-0d4535726b24">
+      <column name="prsnr" default="NULL" not-null="False" length="4" sql-type="varchar" p1:unicode="False" />
+    </property>
+    <property name="Nachname" type="String" p1:ValidateMaxLength="50" p1:ValidateRequired="true" p1:Guid="b5eb2db1-3136-48d0-ad57-81dfee7c4c60">
+      <column name="nachname" not-null="True" length="50" sql-type="nvarchar" p1:unicode="True" />
+    </property>
+    <property name="Vorname" type="String" p1:nullable="True" p1:ValidateMaxLength="50" p1:ValidateRequired="false" p1:Guid="2a0fb7ce-bf33-4297-a3ca-edea64c316fd">
+      <column name="vorname" not-null="False" length="50" sql-type="nvarchar" p1:unicode="True" />
+    </property>
+    <property name="Geschlecht" type="String" p1:nullable="True" value-generated="OnAdd" p1:ValidateMaxLength="1" p1:ValidateRequired="false" p1:Guid="0bd08609-30ee-4e25-afd4-62470efc9fb6">
+      <column name="geschlecht" default="NULL" not-null="False" length="1" sql-type="varchar" p1:unicode="False" />
+    </property>
+    <property name="Datumeintritt" type="DateTime" value-generated="OnAdd" p1:ValidateRequired="true" p1:Guid="bbf976da-ae32-439b-bd46-78381d67dbf7">
+      <column name="datumeintritt" default="NULL" not-null="True" sql-type="date" p1:unicode="False" />
+    </property>
+    <property name="Datumaustritt" type="DateTime" p1:nullable="True" value-generated="OnAdd" p1:ValidateRequired="false" p1:Guid="be527ede-c536-484d-aaa4-725665b26698">
+      <column name="datumaustritt" default="NULL" not-null="False" sql-type="date" p1:unicode="False" />
+    </property>
+    <property name="Extern" type="Boolean" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="dbeb34d1-0512-4d0f-b240-980003cd5b47">
+      <column name="extern" default="0" not-null="False" sql-type="bit" p1:unicode="False" />
+    </property>
+    <property name="Email" type="String" value-generated="OnAdd" p1:ValidateMaxLength="50" p1:ValidateRequired="true" p1:Guid="dd14fe01-0635-4593-a21b-e7391fd85e2e">
+      <column name="email" default="NULL" not-null="True" length="50" sql-type="varchar" p1:unicode="False" />
+    </property>
+    <property name="Durchwahl" type="String" p1:nullable="True" value-generated="OnAdd" p1:ValidateMaxLength="50" p1:ValidateRequired="false" p1:Guid="3784574d-5322-4495-8f22-0abbbfb5c7db">
+      <column name="durchwahl" default="NULL" not-null="False" length="50" sql-type="varchar" p1:unicode="False" />
+    </property>
+    <property name="AbteilungId" type="Int32" p1:nullable="True" value-generated="OnAdd" p1:ValidateRequired="false" p1:Guid="8ec2f783-875e-48ee-ba26-2b3ceb7de9ac">
+      <column name="abteilungId" default="NULL" not-null="False" precision="10" scale="0" sql-type="int" p1:unicode="False" />
+    </property>
+    <property name="FunktionId" type="Int32" p1:nullable="True" value-generated="OnAdd" p1:ValidateRequired="false" p1:Guid="fc916f37-b915-4194-b16b-2b4e1c11c7c3">
+      <column name="funktionId" default="NULL" not-null="False" precision="10" scale="0" sql-type="int" p1:unicode="False" />
+    </property>
+    <property name="Geburtsdatum" type="DateTime" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="2d068253-a762-4e93-aebd-ad61ad8683bb">
+      <column name="geburtsdatum" not-null="False" sql-type="date" p1:unicode="False" />
+    </property>
+    <property name="NiederlassungId" type="Int32" p1:ValidateRequired="true" p1:Guid="33c5a7e2-73e1-40e9-987d-dc101778d1b8">
+      <column name="" not-null="False" />
+    </property>
+  </class>
+  <class name="Niederlassung" entity-set="Niederlassungs" table="niederlassung" p1:Guid="173f084b-e45f-405f-8449-d57058df2ce8">
+    <id name="NiederlassungId" type="Int32" value-generated="OnAdd" p1:ValidateRequired="true" p1:Guid="b1aa0dea-7a84-47f0-9317-74ed1188a083">
+      <column name="" />
+    </id>
+    <property name="Niederlassungsbezeichnung" type="String" p1:ValidateRequired="true" p1:Guid="550f7363-18e5-492b-a7f0-341c81201851">
+      <column name="" />
+    </property>
+    <property name="Niederlassungsvorwahl" type="String" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="e287e7be-ca5d-47d2-9851-da652062aae7">
+      <column name="" />
+    </property>
+  </class>
+  <associations>
+    <association name="Funktion_Mitarbeiter" cardinality="OneToMany" p1:Guid="2825f7a7-1b55-4fcd-81e1-18afabb0acc8">
+      <end1 multiplicity="ZeroOrOne" name="Funktion" class="Mitarbeiter" relation-class="Funktion" constrained="True" lazy="False" p1:Guid="a16f6550-7b67-4c41-a5d4-a1e2092c910f">
+        <property name="FunktionId" />
+      </end1>
+      <end2 multiplicity="Many" name="MitarbeiterListe" class="Funktion" relation-class="Mitarbeiter" lazy="False" p1:Guid="b13cd350-12c8-4e59-8ee0-ba120b1b465d">
+        <property name="FunktionId" />
+      </end2>
+    </association>
+    <association name="Abteilung_Mitarbeiter" cardinality="OneToMany" p1:Guid="0b298a61-9b8f-4e07-bcb7-e94fe151c48f">
+      <end1 multiplicity="ZeroOrOne" name="Abteilung" class="Mitarbeiter" relation-class="Abteilung" constrained="True" lazy="False" p1:Guid="7515f444-8b65-40b0-9b65-1467c08f9bd3">
+        <property name="AbteilungId" />
+      </end1>
+      <end2 multiplicity="Many" name="MitarbeiterListe" class="Abteilung" relation-class="Mitarbeiter" lazy="False" p1:Guid="b9dee06c-f7df-4097-b0b7-d0ea43d71e86">
+        <property name="AbteilungId" />
+      </end2>
+    </association>
+    <association name="Niederlassung_Mitarbeiter" cardinality="OneToMany" p1:Guid="ceb9b6ff-d71d-49e0-8d91-d7c149fcbaf1">
+      <end1 multiplicity="One" name="Niederlassung" class="Mitarbeiter" relation-class="Niederlassung" constrained="True" lazy="False" p1:Guid="63708f5b-2457-4e0c-9849-836b581b284c">
+        <property name="NiederlassungId" />
+      </end1>
+      <end2 multiplicity="Many" name="MitarbeiterListe" class="Niederlassung" relation-class="Mitarbeiter" lazy="False" p1:Guid="1bbc86be-c07e-456a-90a9-602d38e3cd12">
+        <property name="NiederlassungId" />
+      </end2>
+    </association>
+  </associations>
+</efcore>

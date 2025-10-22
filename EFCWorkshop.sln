@@ -1,0 +1,172 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADOTest.ConsApp", "ADOTest.ConsApp\ADOTest.ConsApp.csproj", "{B1588B21-742C-41BD-BDBA-16205FA78FF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADOTest.Lib", "ADOTest.Lib\ADOTest.Lib.csproj", "{D378B733-C8E2-40BE-BF11-03DF6DD17D70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADOTest.DBAccess", "ADOTEst.DBAccess\ADOTest.DBAccess.csproj", "{EE21BAEE-76E4-4031-BAB9-D537AFB136CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities.Lib", "Utilities.Lib\Utilities.Lib.csproj", "{BDC22E29-9C8C-43D4-B680-C38FE55C2135}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFC01.Lib", "EFC01.Lib\EFC01.Lib.csproj", "{3DD7CB04-8D10-4B19-A6FD-5470C087CDCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFC01.ConsApp", "EFC01.ConsApp\EFC01.ConsApp.csproj", "{AD4A944A-5857-42A1-AB07-D0423A0879AA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notizen", "Notizen", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		Notizen\EFC_Day1.txt = Notizen\EFC_Day1.txt
+		Notizen\EFC_Day2.txt = Notizen\EFC_Day2.txt
+		Notizen\EFC_Day3.txt = Notizen\EFC_Day3.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_devart", "_devart", "{84D27F74-D2BA-6C25-2661-968F101900D9}"
+	ProjectSection(SolutionItems) = preProject
+		_devart\ADOTest.Abteilung.cs = _devart\ADOTest.Abteilung.cs
+		_devart\ADOTest.ADOTestDbContext.cs = _devart\ADOTest.ADOTestDbContext.cs
+		_devart\ADOTest.Diagram1.view = _devart\ADOTest.Diagram1.view
+		_devart\ADOTest.edps = _devart\ADOTest.edps
+		_devart\ADOTest.efml = _devart\ADOTest.efml
+		_devart\ADOTest.Funktion.cs = _devart\ADOTest.Funktion.cs
+		_devart\ADOTest.Mitarbeiter.cs = _devart\ADOTest.Mitarbeiter.cs
+		_devart\ADOTest.Niederlassung.cs = _devart\ADOTest.Niederlassung.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_SharedFolder", "_SharedFolder", "{707C2BDE-37F6-40F9-818B-91AC18ABEE31}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "backup", "backup", "{ED6BE68B-D085-4045-AF86-9F675D3355B3}"
+	ProjectSection(SolutionItems) = preProject
+		_SharedFolder\backup\ADOTest.bak = _SharedFolder\backup\ADOTest.bak
+		_SharedFolder\backup\ADOTest.sql = _SharedFolder\backup\ADOTest.sql
+		_SharedFolder\backup\EFC03.bak = _SharedFolder\backup\EFC03.bak
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pdffiles", "pdffiles", "{A58B7245-921F-4FF7-923F-55F82207E7E3}"
+	ProjectSection(SolutionItems) = preProject
+		_SharedFolder\pdffiles\00_Begrüßung.pdf = _SharedFolder\pdffiles\00_Begrüßung.pdf
+		_SharedFolder\pdffiles\01_SQL Server ADO_NET und LINQ.pdf = _SharedFolder\pdffiles\01_SQL Server ADO_NET und LINQ.pdf
+		_SharedFolder\pdffiles\02 Einführung in das ORM.pdf = _SharedFolder\pdffiles\02 Einführung in das ORM.pdf
+		_SharedFolder\pdffiles\03a Die beiden Bestandteile des EFCore-Models.pdf = _SharedFolder\pdffiles\03a Die beiden Bestandteile des EFCore-Models.pdf
+		_SharedFolder\pdffiles\03b Ein erstes Beispiel mit Entity Framework Core.pdf = _SharedFolder\pdffiles\03b Ein erstes Beispiel mit Entity Framework Core.pdf
+		_SharedFolder\pdffiles\03c Erste Vertiefung mit EFC02.pdf = _SharedFolder\pdffiles\03c Erste Vertiefung mit EFC02.pdf
+		_SharedFolder\pdffiles\03d Generierung eines Modells per Reverse Engineering.pdf = _SharedFolder\pdffiles\03d Generierung eines Modells per Reverse Engineering.pdf
+		_SharedFolder\pdffiles\03e Die Nutzung von Sichten Funktionen und Prozeduren.pdf = _SharedFolder\pdffiles\03e Die Nutzung von Sichten Funktionen und Prozeduren.pdf
+		_SharedFolder\pdffiles\03f Hinzufügen Ändern Sichern und Änderungsverfolgung.pdf = _SharedFolder\pdffiles\03f Hinzufügen Ändern Sichern und Änderungsverfolgung.pdf
+		_SharedFolder\pdffiles\03g Untersuchungen zu Assoziation und Vererbung.pdf = _SharedFolder\pdffiles\03g Untersuchungen zu Assoziation und Vererbung.pdf
+		_SharedFolder\pdffiles\03h_Owned und andere Types.pdf = _SharedFolder\pdffiles\03h_Owned und andere Types.pdf
+		_SharedFolder\pdffiles\Ergänzung EFCore Performance.pdf = _SharedFolder\pdffiles\Ergänzung EFCore Performance.pdf
+		_SharedFolder\pdffiles\Ergänzung Temporale Tabellen.pdf = _SharedFolder\pdffiles\Ergänzung Temporale Tabellen.pdf
+		_SharedFolder\pdffiles\Übersicht Abfragen mit LINQ.pdf = _SharedFolder\pdffiles\Übersicht Abfragen mit LINQ.pdf
+		_SharedFolder\pdffiles\Übersicht EF-Functions.pdf = _SharedFolder\pdffiles\Übersicht EF-Functions.pdf
+		_SharedFolder\pdffiles\Übersicht EFCore Provider.pdf = _SharedFolder\pdffiles\Übersicht EFCore Provider.pdf
+		_SharedFolder\pdffiles\Übersicht Fortgeschrittene Techniken.pdf = _SharedFolder\pdffiles\Übersicht Fortgeschrittene Techniken.pdf
+		_SharedFolder\pdffiles\Übersicht Konfigurationsmöglichkeiten.pdf = _SharedFolder\pdffiles\Übersicht Konfigurationsmöglichkeiten.pdf
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sources", "sources", "{B6D91EE1-75A0-4E04-887A-79635521D0D2}"
+	ProjectSection(SolutionItems) = preProject
+		_SharedFolder\sources\appsettings.json = _SharedFolder\sources\appsettings.json
+		_SharedFolder\sources\audit.cs = _SharedFolder\sources\audit.cs
+		_SharedFolder\sources\ConsoleUtility.cs = _SharedFolder\sources\ConsoleUtility.cs
+		_SharedFolder\sources\DBAccess.cs = _SharedFolder\sources\DBAccess.cs
+		_SharedFolder\sources\EFC01DBContext.cs = _SharedFolder\sources\EFC01DBContext.cs
+		_SharedFolder\sources\EFC01DBContext_00.cs = _SharedFolder\sources\EFC01DBContext_00.cs
+		_SharedFolder\sources\EFCWorkshop.sln = _SharedFolder\sources\EFCWorkshop.sln
+		_SharedFolder\sources\sqlconnectionstring.txt = _SharedFolder\sources\sqlconnectionstring.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "testdaten", "testdaten", "{8D701E4B-BADF-43A2-BE3B-C21EBD0510CE}"
+	ProjectSection(SolutionItems) = preProject
+		_SharedFolder\Testdaten\adressen.sql = _SharedFolder\Testdaten\adressen.sql
+		_SharedFolder\Testdaten\Testdaten_EFC01.cs = _SharedFolder\Testdaten\Testdaten_EFC01.cs
+		_SharedFolder\Testdaten\Testdaten_EFC02.cs = _SharedFolder\Testdaten\Testdaten_EFC02.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{47BF011B-28FE-464D-A336-A22B4ED41746}"
+	ProjectSection(SolutionItems) = preProject
+		_SharedFolder\tools\entitydeveloperfree.exe = _SharedFolder\tools\entitydeveloperfree.exe
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFC02.Lib", "EFC02.Lib\EFC02.Lib.csproj", "{95FE3E06-9687-492D-BAE3-8A74E76E231C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFC02.ConsApp", "EFC02.ConsApp\EFC02.ConsApp.csproj", "{DF5A4985-67FB-4604-A3A1-CFB459F39870}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFC03.Lib", "EFC03.Lib\EFC03.Lib.csproj", "{35021AA1-FE3B-4A4A-A3CC-9C8083673F99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFC03.ConsApp", "EFC03.ConsApp\EFC03.ConsApp.csproj", "{8313EF99-675C-49A7-99EC-26403A558A17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFC04.Lib", "EFC04.Lib\EFC04.Lib.csproj", "{70CEEDD3-5A09-457D-BCCF-85A897FDFBC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFC04.ConsApp", "EFC04.ConsApp\EFC04.ConsApp.csproj", "{99CD4963-2B7A-4E42-860D-95D91D723A88}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1588B21-742C-41BD-BDBA-16205FA78FF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1588B21-742C-41BD-BDBA-16205FA78FF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1588B21-742C-41BD-BDBA-16205FA78FF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1588B21-742C-41BD-BDBA-16205FA78FF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D378B733-C8E2-40BE-BF11-03DF6DD17D70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D378B733-C8E2-40BE-BF11-03DF6DD17D70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D378B733-C8E2-40BE-BF11-03DF6DD17D70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D378B733-C8E2-40BE-BF11-03DF6DD17D70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE21BAEE-76E4-4031-BAB9-D537AFB136CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE21BAEE-76E4-4031-BAB9-D537AFB136CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE21BAEE-76E4-4031-BAB9-D537AFB136CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE21BAEE-76E4-4031-BAB9-D537AFB136CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDC22E29-9C8C-43D4-B680-C38FE55C2135}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDC22E29-9C8C-43D4-B680-C38FE55C2135}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDC22E29-9C8C-43D4-B680-C38FE55C2135}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDC22E29-9C8C-43D4-B680-C38FE55C2135}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DD7CB04-8D10-4B19-A6FD-5470C087CDCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DD7CB04-8D10-4B19-A6FD-5470C087CDCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DD7CB04-8D10-4B19-A6FD-5470C087CDCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DD7CB04-8D10-4B19-A6FD-5470C087CDCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD4A944A-5857-42A1-AB07-D0423A0879AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD4A944A-5857-42A1-AB07-D0423A0879AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD4A944A-5857-42A1-AB07-D0423A0879AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD4A944A-5857-42A1-AB07-D0423A0879AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95FE3E06-9687-492D-BAE3-8A74E76E231C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95FE3E06-9687-492D-BAE3-8A74E76E231C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95FE3E06-9687-492D-BAE3-8A74E76E231C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95FE3E06-9687-492D-BAE3-8A74E76E231C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF5A4985-67FB-4604-A3A1-CFB459F39870}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF5A4985-67FB-4604-A3A1-CFB459F39870}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF5A4985-67FB-4604-A3A1-CFB459F39870}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF5A4985-67FB-4604-A3A1-CFB459F39870}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35021AA1-FE3B-4A4A-A3CC-9C8083673F99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35021AA1-FE3B-4A4A-A3CC-9C8083673F99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35021AA1-FE3B-4A4A-A3CC-9C8083673F99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35021AA1-FE3B-4A4A-A3CC-9C8083673F99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8313EF99-675C-49A7-99EC-26403A558A17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8313EF99-675C-49A7-99EC-26403A558A17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8313EF99-675C-49A7-99EC-26403A558A17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8313EF99-675C-49A7-99EC-26403A558A17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70CEEDD3-5A09-457D-BCCF-85A897FDFBC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70CEEDD3-5A09-457D-BCCF-85A897FDFBC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70CEEDD3-5A09-457D-BCCF-85A897FDFBC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70CEEDD3-5A09-457D-BCCF-85A897FDFBC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99CD4963-2B7A-4E42-860D-95D91D723A88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99CD4963-2B7A-4E42-860D-95D91D723A88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99CD4963-2B7A-4E42-860D-95D91D723A88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99CD4963-2B7A-4E42-860D-95D91D723A88}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ED6BE68B-D085-4045-AF86-9F675D3355B3} = {707C2BDE-37F6-40F9-818B-91AC18ABEE31}
+		{A58B7245-921F-4FF7-923F-55F82207E7E3} = {707C2BDE-37F6-40F9-818B-91AC18ABEE31}
+		{B6D91EE1-75A0-4E04-887A-79635521D0D2} = {707C2BDE-37F6-40F9-818B-91AC18ABEE31}
+		{8D701E4B-BADF-43A2-BE3B-C21EBD0510CE} = {707C2BDE-37F6-40F9-818B-91AC18ABEE31}
+		{47BF011B-28FE-464D-A336-A22B4ED41746} = {707C2BDE-37F6-40F9-818B-91AC18ABEE31}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D3313473-EB3A-4939-8AB2-44F96E743081}
+	EndGlobalSection
+EndGlobal

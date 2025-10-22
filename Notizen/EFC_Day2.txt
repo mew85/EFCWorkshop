@@ -1,0 +1,24 @@
+- Rückblick auf Tag 1
+	- ORM zum mapping zwischen Tabellen und KLassen sehr hilfreich
+	- Entity Developer für Entwicklung sehr hilfreich
+
+- heute weitere Vertiefung
+	- neues Projektkonstrukt EFC02
+	- FluentAPI kennen gelernt
+		- Mapping-Funktionen, Aufruf aus OnModelCreating
+		- mit Entity Developer einfach möglich (siehe Kontext-Klasse)
+		- Auswirkungen auf Beziehungen
+			- Wenn z.B. ein Eintrag gelöscht wird, der in einer anderern Klasse als Fremdschlüssel eingebaut ist, dann muss das RelationshipMapping angepasst werden -> DeleteBehavior
+			- Weiteres Verhalten mit ...().HasMany(...).WithOne oder ...().HasOne(...).WithMany(...)
+		- Beispiel Klasse Audit
+	- Checks für Enums
+		- alter table mitarbeiter add constraint chk_GEschlecht check (geschlecht in ('m','w','d','x'))
+	-neues Projekt EFC03 -> Scaffold DbContext
+
+- Best Practises
+	- Views, Tabellenwertfunktionen usw. sollten auf DB Ebene erstellt werden
+		-> in der Anwendungslogik auch möglich, allerdings geht das dann auf die Performance
+	- Zur Vereinfachung können vereinfachte Klassen, Structs oder Records verwendet werden
+	- Integrierte Funktionen aus dem EntityFramework können genutzt werden statt Funktionen auf DB-Ebene
+		- ...
+			.Where(m => EF.Funktions.Like(m.nachname, "P%"))

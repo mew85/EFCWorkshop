@@ -1,0 +1,33 @@
+- Datenbank aufau (referenzielle Integrität)
+	- Tabellen 
+	- Datentypen
+	- referenzielle Integrität
+- Managementstudio -> Widerherstellen einer DB mittel bak oder sql
+	- DB Funktionen
+	- Views anpassen, Funktion nutzen
+
+- Klassenkonzept C#
+	- Klassen (Vererbung, Polymorphie, Assoziation)
+	
+	-> Absprung Devart Entity Developer: data source=SQL-SRV1;initial catalog=ADOTest;integrated security=True;persist security info=True
+	- (TEstversion kann auf bis zu 10 Tabellen zugreifen)
+	- UML anpassen -> Code geneieren (erstellt Klassen für C#)
+	
+Migrationen
+	- add-migration <<name>> -> erstelltr die Dateien fü´r die Migration
+	- script-migration -> erstellt das Skripte, welches durchgeführt werden würde
+	- update-database -> führt die Migration in der Datenbank aus
+
+- Ladestrategien
+	- Standard
+	- Eager Loading
+
+- Ms SQL Profiler
+	- loggt CRUD-Anweisungen mit
+	- Beispiel:
+			exec sp_executesql N'SET IMPLICIT_TRANSACTIONS OFF;
+			SET NOCOUNT ON;
+			INSERT INTO [dbo].[abteilung] ([Abteilungsbezeichnung])
+			OUTPUT INSERTED.[AbteilungId]
+			VALUES (@p0);
+			',N'@p0 nvarchar(50)',@p0=N'Buchhaltung'

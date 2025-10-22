@@ -1,0 +1,54 @@
+- direkte Zugriffe auf DB-Objekte
+	- Stored Procedure
+	- Aufruf mit dbctx.Database....
+		-> .ExecuteSql -> Aufruf der Prouedur
+		-> .SqlQuery -> Select Befehl
+
+- Transaktionen
+	- nach Using DBContext kommt using TRansactions
+	- Immer bei mehreren zusammenhängeden Daten
+	- Commit und Rollback
+
+- Massendatenupdate
+	- statt foreach auch .ExecuteUpdate(setter => setter.SetProperty(...))
+
+- Änderungsverfolgung
+	- Changetracker (Nachverfolgung von Veränderugn an Entities)
+		- wird aktiviert mit dbcts.ChangeTracker.DetectChanges();
+		- Ausgabe mit dbcts.ChangeTracker,DebugView.LongView;
+	- Z.B. für Testphasen sehr hilfreich
+	- TRacking kann unterbunden werden
+		- dbcts.ChangeTracker.QueryTRackingBehavior = QueryTrackingBehavior.NoTracking;
+	- Status-Aussagen
+		- dbcts.Entry(<<OBJECT>>).State => z.B. Detached, Unchanged, Deleted, Modified, Added
+		- unterschiedliche Behandlung bei SaveChanges();
+		- Verbundene und nicht Verbundene Szenarien
+			- verbunden: alles passiert innerhalb eines Using-DbContext
+			- nicht verbunden: mehrere DbContexte, z.B. Erstes Using=Daten werden geladen. Anschließend findet Änderung statt, dann neuer DbContext = hier muss State auf modified gesetzt werden, bevor SaveChanges() ausgerufen wird
+	- Attach und Entry
+		- Entry: Nur das Objekt, welches durch "Entry" angesprochen wird, wird geändert
+		- Attach: Das Objekt wird rekursiv analysiert und alle verbundenen Entities werden berücksichtigt
+
+- Vererbung (Beispiel: Tabelle firma, lieferant und Auftraggeber erben)
+	- Table splitting
+		- alle Daten in einer tabelle
+	- Table per Hirarchy
+		- alle Daten in einer Tabelle
+		- Unterscheidung durch Diskriminator
+	- Table per type
+		- 3 Tabellen
+		- PK der Tabellen lieferant und auftraggeber ist die firmaId
+	- Table as concrete type
+		- firma ist abstrakte klasse
+		- 2 Tabellen (nur lieferant und auftraggeber)
+	- TPH ist für viele Anwendungsfälle performant (da keine joins) und einfach, es entstehen aber viele Nullwerte
+		- SQL-Server spezifische Eigenschaft "ist von geringer Dichte" auf "Ja" setzen
+
+- Owned Types, Complex Types und Json (neues Projekt EFC04)
+	- weit normalisierte Tabellenstruktur kann zu vielen Joins führen, was unperformant werden kann
+	- Owned Types, z.B. im Json-Format -> wird in der Tabelle in ein nvarchar(MAX)-Feld geschrieben
+
+- IEnumerable vs IQueryable
+	- .AsEnumerable() -> Verareitung läuft im lokalen Speicher
+	- .AsQueryable() -> Verarbeitung auf dem Server
+

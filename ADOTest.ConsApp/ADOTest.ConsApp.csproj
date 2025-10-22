@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ADOTEst.DBAccess\ADOTest.DBAccess.csproj" />
+    <ProjectReference Include="..\ADOTest.Lib\ADOTest.Lib.csproj" />
+    <ProjectReference Include="..\Utilities.Lib\Utilities.Lib.csproj" />
+  </ItemGroup>
+
+</Project>
